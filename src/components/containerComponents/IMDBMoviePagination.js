@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import PaginationComponent from '../PaginationComponent';
+import PaginationComponent from '../presentationalComponents/PaginationComponent';
 import { fetchMovies} from '../../actions/fetchMovies';
 
 const mapStateToProps = (state) => {

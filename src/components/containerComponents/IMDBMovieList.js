@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import MovieList from '../MovieList';
-import withLoadingIcon from '../Loading';
+import MovieList from '../presentationalComponents/MovieList';
+import withLoadingIcon from '../presentationalComponents/Loading';
+import withEmptyComponent from '../presentationalComponents/EmptyComponent';
 
 const POSTER_BASE_URL = 'http://image.tmdb.org/t/p/w185/';
 const mapStateToProps = ({movies, ui}) => {
-  console.log('ui is', ui);
   const movieCards = Object.keys(movies).map(k => {
     const movie = movies[k];
     return {
@@ -23,4 +23,4 @@ const mapStateToProps = ({movies, ui}) => {
 export default connect(
   mapStateToProps,
   null
-)(withLoadingIcon(MovieList));
+)(withLoadingIcon(withEmptyComponent(MovieList)));

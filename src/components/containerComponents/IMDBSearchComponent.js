@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import MovieSearchComponent from '../MovieSearchComponent';
+import MovieSearchComponent from '../presentationalComponents/MovieSearchComponent';
 import { fetchMovies} from '../../actions/fetchMovies';
 
 

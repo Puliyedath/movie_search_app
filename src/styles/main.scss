@@ -1,0 +1,22 @@
+@media (min-width: 500px) {
+  .card-columns{
+    column-count: 2;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .card-columns{
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1500px) {
+  .card-columns{
+    column-count: 3;
+    column-width: 400px;
+  }
+
+}
+
+

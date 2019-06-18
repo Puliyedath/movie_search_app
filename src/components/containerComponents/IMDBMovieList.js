@@ -10,6 +10,8 @@ const mapStateToProps = ({movies}) => {
       desc: movies[k].overview,
       title: movies[k].original_title,
       alt: movies[k].original_title,
+      releaseDate : movies[k].release_date,
+      voteCount: movies[k].vote_count,
     }
   })
   return { movieCards };

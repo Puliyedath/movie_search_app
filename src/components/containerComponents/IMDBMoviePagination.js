@@ -28,7 +28,9 @@ const mergeProps = ({ page, totalPages, query }, {dispatch}) => {
         console.log(page, totalPages, query);
         dispatch(fetchMovies(query, page - 1));
       }
-    }
+    },
+    isNextDisabled: !(page < totalPages),
+    isPrevDisabled: !(page > 1)
   };
 }
 

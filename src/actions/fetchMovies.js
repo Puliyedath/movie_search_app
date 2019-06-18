@@ -2,7 +2,7 @@ import fetch from 'cross-fetch';
 import updatePageDetails from './updatePageDetails';
 
 const API_KEY = 'fcd8cb610d5292b3ddc058cb2f7dda6c';
-const MOVIE_API = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}`;
+const MOVIE_API = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&include_adult=false`;
 
 function searchMovies(movieName) {
   return {

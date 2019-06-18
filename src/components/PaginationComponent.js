@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const PaginationComponent = (props) => {
   const { next , prev, isNextDisabled, isPrevDisabled } = props;
-  console.log('props is', props);
   return (
     <div className="clearfix m-5">
       <nav aria-label="Page navigation">

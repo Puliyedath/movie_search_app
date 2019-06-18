@@ -1,8 +1,11 @@
+import React from 'react';
 import { connect } from 'react-redux';
 import MovieList from '../MovieList';
+import withLoadingIcon from '../Loading';
 
 const POSTER_BASE_URL = 'http://image.tmdb.org/t/p/w185/';
-const mapStateToProps = ({movies}) => {
+const mapStateToProps = ({movies, ui}) => {
+  console.log('ui is', ui);
   const movieCards = Object.keys(movies).map(k => {
     const movie = movies[k];
     return {
@@ -14,10 +17,10 @@ const mapStateToProps = ({movies}) => {
       voteCount: movies[k].vote_count,
     }
   })
-  return { movieCards };
+  return { movieCards, ui, };
 }
 
 export default connect(
   mapStateToProps,
   null
-)(MovieList);
+)(withLoadingIcon(MovieList));

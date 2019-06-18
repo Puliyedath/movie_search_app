@@ -4,7 +4,6 @@ const pages = (state = {}, action) => {
   case 'UPDATE_PAGE_DETAILS':
     const { totalPages = 1, page } = action;
     return { totalPages, page, };
-
   default:
     return state;
   }

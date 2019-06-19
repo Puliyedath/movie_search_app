@@ -1,4 +1,4 @@
-import fetch from 'cross-fetch';
+import 'cross-fetch';
 import updatePageDetails from './updatePageDetails';
 
 const API_KEY = 'fcd8cb610d5292b3ddc058cb2f7dda6c';

@@ -1,7 +1,7 @@
 # Movie Search App
   
 ### Project Movie Search App Setup (script)
-  * execute the script launch_movie_search_app.sh from the project root folder
+  * run the script 'launch_movie_search_app.sh' from the project root folder
     * bash launch_movie.search_app.sh
 
 ### Project Movie Search App SetUp (Manual)

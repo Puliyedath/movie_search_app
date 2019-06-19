@@ -9,7 +9,7 @@
   * run 'npm start:dev:server' - this will launch a server listening on port 8080 on your local host
 
 
-#### Details about the app
+#### Details
   * On the intial launch the app would start with a black page with a search input and box with dashed border which says "No Results Available"
   * Searching for a movie title in the search field (the search only begins if you press Enter or hit the search icon - the is deliberately done so that we dont end up issuing expensive queries on each key press.) will populate the movie cards in place of the the box
   * The next and prev links lets the user paginate back and forth
